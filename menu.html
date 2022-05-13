@@ -13,6 +13,7 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -33,55 +34,63 @@
                 <a class="nav-link" href="menu.html">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="order-swap.html">Contact</a>
+                <a class="nav-link" href="#">Contact</a>
               </li>
           </div>
         </div>
     </nav>
 
-    <!-- Hero Image -->
-    <main>
-        <div>
-            <h1>Best Sushi Restaurant</h1>
-            <p class="d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nisi magni. A, quidem laborum vero cum unde odio quae iusto.</p>
+    <section class="sect-listing">
+        <!-- Search Bar -->
+        <div class="border p-2 d-flex align-items-center gap-2 bg-light">
+            <a href="" class="badge bg-dark">Main</a>
+            <a href="" class="badge bg-dark">Appetizer</a>
+            <a href="" class="badge bg-dark">Sides</a>
+            <a href="" class="badge bg-dark">Dessert</a>
+            <a href="" class="badge bg-dark">Drinks</a>
+            <div class="d-none d-md-flex ms-auto align-items-center">
+                <input type="text" class="form-control form-control-sm" placeholder="e.g. salmon sashimi">
+                <buttton class="badge bg-danger">Search</buttton>
+            </div>
+            <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
         </div>
-    </main>
 
-    <!-- Popular Listings -->
-    <section id="sect-popular" class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-4 p-3 bg-dark">
+        <!-- Listing -->
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+            <!-- Each Listing -->
+            <div class="col">
                 <div class="card">
                     <img src="https://images3.alphacoders.com/879/879538.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Tempura Udon</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="tag">Udon</a>
+                      <a href="#" class="tag">Tempura</a>
+                      <a href="#" class="tag">Soup</a>
                     </div>
+                    <a href="#" class="btn btn-sm btn-success w-100">Add To Cart</a>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-3 bg-info">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col">
+                <div class="frame">
+                    <div class="frame-img">
+                        <img src="https://images3.alphacoders.com/879/879538.jpg" alt="...">
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 p-3 bg-success">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="frame-info">
+                        <h5 class="card-title">Tempura Udon</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="tag">Udon</a>
+                        <a href="#" class="tag">Tempura</a>
+                        <a href="#" class="tag">Soup</a>
                     </div>
+                    <a href="#" class="btn btn-sm btn-success w-100">Add To Cart</a>
                 </div>
             </div>
         </div>
     </section>
+
+    
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

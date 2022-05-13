@@ -1,0 +1,33 @@
+.tag{
+    border: 1px solid; 
+    text-decoration: none;
+    color: salmon;
+    border-radius: 1px; 
+    display: inline-block;
+    padding: 1px 4px; 
+    font-size: 12px; 
+}
+.card-body>p{
+    line-height: 1.25; 
+}
+
+.frame{
+    height: 400px; 
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+.frame-img{
+    background-color: aqua;
+    flex: 1.8;
+    overflow: hidden; 
+}
+.frame-img>img{
+    width: 100%; 
+}
+.frame-info{
+    background-color: rgb(180,221,173);
+    flex: 3; 
+    padding: 10px; 
+}

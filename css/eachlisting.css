@@ -1,0 +1,14 @@
+.images-wrapper{
+    background-color: aqua; 
+    height: 150px; 
+    padding: 5px; 
+    overflow: scroll;
+    white-space: nowrap;
+}
+.thumb-image{
+    height: 95%; 
+    width: 150px; 
+}
+.thumb-image>img{
+    height:100%; 
+}
